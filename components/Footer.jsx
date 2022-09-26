@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className=" max-w-screen-2xl  min-h-full  px-4 w-full pt-9 bg-[#033342] text-white">
-      <div className="w-[90%] mx-auto  gap-1 grid grid-cols-2 justify-between py-8 px-6 md:grid-cols-4  items-center">
+      <div className="w-[90%] mx-auto  gap-1 grid grid-cols-1 sm:grid-cols-2  justify-between py-8 px-6 md:grid-cols-4  items-center">
         <div>
           <img src="/nsl.png" className="w-[90px] h-[50px]" />
           <p className="max-w-[300px] w-full my-4">
