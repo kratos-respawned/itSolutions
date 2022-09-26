@@ -10,8 +10,10 @@ export default function Navbar() {
       </Link>
       <div
         className={`absolute w-full bottom-0 ${
-          Nav ? " translate-y-full" : " opacity-0 pointer-events-none "
-        } transform-gpu transition-all lg:static lg:opacity-100 lg:w-fit flex flex-col lg:flex-row items-center`}
+          Nav
+            ? " translate-y-full bg-[#FFE7D9] opacity-100 mt-2 lg:bg-transparent gap-3 z-50 p-3 rounded-md "
+            : " opacity-0 pointer-events-none "
+        } transform-gpu transition-all lg:static lg:opacity-100 lg:gap-0 lg:mt-0 lg:w-fit lg:p-0 lg:rounded-none flex flex-col lg:flex-row items-center`}
       >
         <Link href="/">
           <a className="px-3 text-base">Home</a>
