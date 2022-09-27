@@ -34,7 +34,8 @@ export default function Jumbotron() {
       <div className="hidden sm:block   h-full basis-1/2 ">
         <div className="relative max-w-full min-w-full h-96 lg:h-[500px] max-h-[695px]">
           <Image
-            alt="hero"
+	priority
+	  alt="hero"
             src="/jumboHer.png"
             layout="fill"
             objectFit="contain"
