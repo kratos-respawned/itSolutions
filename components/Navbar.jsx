@@ -11,6 +11,7 @@ export default function Navbar() {
       <Link href="/">
         <div className="relative w-24 h-9">
           <Image
+            priority
             alt="logo"
             src="/logo.png"
             layout="fill"

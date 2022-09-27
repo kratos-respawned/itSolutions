@@ -7,7 +7,13 @@ export default function ServiceCard(props) {
       }  relative`}
     >
       <div className="relative w-24 h-28">
-        <Image src={props.img} layout="fill" objectFit="contain" className="" />
+        <Image
+          src={props.img}
+          priority
+          layout="fill"
+          objectFit="contain"
+          className=""
+        />
       </div>
       <h1 className="mt-5 font-bold md:text-xl lg:text-2xl text-2xl  poppins ">
         {props.title}

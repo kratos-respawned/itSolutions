@@ -206,7 +206,7 @@ export default function Services() {
       <main className="bg-[#F6F6F6] py-7">
         <div className="text-center w-full flex flex-col gap-y-4 items-center">
           <h1 className="mx-3 text-xl lg:px-4  poppins green max-w-[520px] font-bold sm:text-2xl lg:text-4xl">
-            Why We Are The Best In Providing Services
+            Our Services Make Your Work Productive
           </h1>
           <p className=" max-w-[400px] mx-3 grey inter md:max-w-[630px]  text-sm lg:text-lg">
             We appreciate your trust. Our clients choose us and our products
@@ -328,7 +328,7 @@ export default function Services() {
       <main className="bg-[#F6F6F6] py-7">
         <div className="text-center w-full flex flex-col gap-y-4 items-center">
           <h1 className="mx-3 text-xl lg:px-4  poppins green max-w-[520px] font-bold sm:text-2xl lg:text-4xl">
-            Our Services Make Your Work Productive
+            Why We Are The Best In Providing Services
           </h1>
           <p className=" max-w-[400px] mx-3 grey inter md:max-w-[630px]  text-sm lg:text-lg">
             We appreciate your trust. Our clients choose us and our products
@@ -363,7 +363,7 @@ export default function Services() {
           <div className="relative w-full sm:h-[50vh] lg:h-[430px] ">
             <Image
               priority
-              src="/servicePage/Frame.png"
+              src="/servicePage/referal.png"
               layout="fill"
               objectFit="contain"
             />
