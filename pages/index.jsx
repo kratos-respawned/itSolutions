@@ -82,6 +82,7 @@ export default function Home() {
             </button>
           </div>
         </section>
+        {/* ///////////  Slider //////////////////// */}
 
         <section className="md:px-7 grid place-items-center mt-8 grid-cols-1 md:grid-cols-3  md:gap-x-8 ">
           <ReviewCard
@@ -188,7 +189,7 @@ export default function Home() {
               ></textarea>
               <div className="flex w-full">
                 <input type="checkbox" value="" />
-                <label className="text-sm text-[#6C6C6C]" for="vehicle1">
+                <label className="text-sm text-[#6C6C6C]" htmlFor="consent">
                   Yes, I have read and agree to the Data Privacy and Privacy
                   notice.
                 </label>

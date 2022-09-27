@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Jumbotron() {
   return (
     <div className="flex-1 max-h-[85%] flex flex-col sm:flex-row items-center  pt-12">
@@ -30,8 +31,16 @@ export default function Jumbotron() {
           </button>
         </div>
       </div>
-      <div className="hidden sm:block relative  h-full basis-1/2 ">
-        <img src="jumboHer.png" className=" bg-transparent max-w-full " />
+      <div className="hidden sm:block   h-full basis-1/2 ">
+        <div className="relative max-w-full min-w-full h-96 lg:h-[500px] max-h-[695px]">
+          <Image
+            alt="hero"
+            src="/jumboHer.png"
+            layout="fill"
+            objectFit="contain"
+            className=" bg-transparent"
+          />
+        </div>
       </div>
     </div>
   );

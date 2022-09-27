@@ -1,7 +1,28 @@
+@import "@fontsource/inter";
+@import "@fontsource/poppins";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* *{
-    outline: 2px solid red;
+/* * {
+  outline: 2px solid red;
 } */
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.inter {
+  font-family: "Inter", sans-serif;
+}
+.grey {
+  color: #6c6c6c;
+}
+.orange {
+  background-color: #f97e31;
+}
+.green {
+  color: #053746;
+}
+.orangebtn {
+  background: linear-gradient(110.38deg, #ec9f05 0%, #ff4e00 100%);
+}
