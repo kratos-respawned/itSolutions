@@ -8,6 +8,7 @@ import ServiceCard from "../../components/service/ServiceCard";
 import PromoCard from "../../components/service/PromoCard";
 import AchievementCard from "../../components/service/AchievementCard";
 import Footer from "../../components/Footer";
+import TimelineCard from "../../components/service/TimelineCard";
 export default function Services() {
   const services = [
     {
@@ -110,6 +111,28 @@ export default function Services() {
     {
       img: "/servicePage/achievementCard/quality.png",
       title: "Committed to the Highest Quality",
+    },
+  ];
+  const timeline = [
+    {
+      img: "/servicePage/working/discovery.png",
+      title: "Discovery",
+      text: "Contrary to popular belief, Lorem Ipsum is not.",
+    },
+    {
+      img: "/servicePage/working/planning.png",
+      title: "Planning",
+      text: "Contrary to popular belief, Lorem Ipsum is not.",
+    },
+    {
+      img: "/servicePage/working/practice.png",
+      title: "Practice",
+      text: "Contrary to popular belief, Lorem Ipsum is not.",
+    },
+    {
+      img: "/servicePage/working/delivery.png",
+      title: "Delivery",
+      text: "Contrary to popular belief, Lorem Ipsum is not.",
     },
   ];
   return (
@@ -216,28 +239,89 @@ export default function Services() {
             the world doing over 20 years.
           </p>
         </div>
-        <div className="bg-[#FFEFE8] rounded-lg py-6 px-5 md:px-12">
-          <div>
-            <h1 className="poppins green font-semibold text-xl md:text-4xl max-w-[659px]">
+        {/* timeline */}
+        <section>
+          <div className="hidden md:block relative w-[80%]  md:h-64 lg:h-80  max-h-[321px] mx-auto ">
+            <Image
+              src="/servicePage/timeline.png"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <div className="grid gap-y-10 sm:gap-y-10  sm:grid-cols-2 md:hidden">
+            {timeline.map((card, key) => {
+              return (
+                <TimelineCard
+                  key={key}
+                  img={card.img}
+                  title={card.title}
+                  text={card.text}
+                />
+              );
+            })}
+          </div>
+        </section>
+        {/* red box */}
+        <section className="w-[80%] lg:w-[70%] mx-auto flex justify-between gap-x-4 items-center bg-[#FFEFE8] rounded-2xl my-4 px-5 md:px-12">
+          <div className="hidden md:block relative md:w-72 md:h-72 lg:h-[413px] lg:w-[397px] max-w-[413px] max-h-[397px] ">
+            <Image
+              src="/servicePage/registerFrame.png"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+          <div className="p-5 md:p-0">
+            <h1 className="text-center md:text-left poppins green font-semibold text-xl md:text-xl lg:text-3xl max-w-[659px]">
               Ready to improve your online customer experience?
             </h1>
-            <div className="flex justify-between mt-3 max-w-[350px] rounded-full bg-white">
+            <div className="mx-auto md:mx-0 flex justify-between mt-3 w-full max-w-[300px] md:w-full md:max-w-[310px] lg:max-w-[350px] rounded-full bg-white my-2">
               <input
-                className="rounded-full pl-3 pr-2 outline-none border-none focus:outline-none focus:border-none"
+                className="text-sm lg:text-base rounded-full pl-3 pr-2  w-[80%] md:w-full outline-none border-none focus:outline-none focus:border-none"
                 placeholder="Enter your email"
               />
-              <button className="orangebtn w-max text-white max-w-[157px]  text-xs sm:text-base px-1 py-2 sm:px-2 md:py-2 rounded-full">
+              <button className="orangebtn  text-white flex-1 basis-full max-w-[90px] md:w-max lg:max-w-[100px]  text-xs lg:text-sm  px-1 py-1.5 sm:px-2 md:py-2 rounded-full">
                 Get a Quote
               </button>
             </div>
-            <p className="grey text-xs">
+            <p className="grey text-xs text-center md:text-left">
               Got a Question?
               <Link href="/contact">
                 <a className="text-orange-500 mx-1">Contact Us</a>
               </Link>
             </p>
           </div>
-        </div>
+        </section>
+        {/* hiring  */}
+        <section className=" h-full min-h-full lg:px-28  px-4 pb-5  w-full pt-4 sm:mt-4  lg:w-full mx-auto grid items-center justify-center sm:gap-x-1 lg:gap-x-3 sm:grid-cols-2 sm:justify-between  sm:h-full">
+          <div className="text-center sm:text-left w-[90%] sm:w-full mx-auto">
+            <h1 className=" poppins font-bold text-2xl md:text-3xl lg:text-4xl max-w-[611px] green text-center sm:text-left">
+              We Are Hiring The World’s Best professionals
+            </h1>
+            <p className="text-sm  lg:text-base text-center sm:text-left max-w-[520px] inter grey  sm:w-full  mt-5">
+              We are technology solutions providing company all over the world
+              doing over 20 years.
+            </p>
+            <p className="text-sm lg:text-base text-center sm:text-left max-w-[520px] inter grey  sm:w-full  mt-5">
+              We believe in true partnerships with our clients. Become one of
+              them. he world's best brands trust us with their products. Explore
+              our selected cases and convince yourself of our pragmatic and
+              user-centered approach.
+            </p>
+            <button className=" text-white text-sm lg:text-base orange max-w-[171px] max-h-[54px] rounded-full px-3 py-2 mt-4 my-3">
+              Apply Now
+            </button>
+          </div>
+          <div className="hidden h-full sm:block  ">
+            <div className="relative w-full my-auto sm:h-80 lg:h-[430px] ">
+              <Image
+                priority
+                src="/servicePage/hiring.png"
+                layout="fill"
+                objectFit="contain"
+              />
+            </div>
+          </div>
+        </section>
       </main>
       {/* ////////// */}
       {/* promise */}
